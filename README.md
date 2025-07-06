@@ -1,2 +1,9 @@
-# -Job-Role-Classifier-using-NLP
-An end-to-end resume screening system that classifies a candidate's resume into job roles using Natural Language Processing techniques.
+
+---
+
+✅ To use this:
+1. In your repo root, create a new file named `README.md`
+2. Paste this code
+3. Commit the file
+
+Let me know once done — I’ll send `requirements.txt` next.
