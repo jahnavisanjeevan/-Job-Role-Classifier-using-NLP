@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Role Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        textarea {
+            width: 100%;
+            padding: 12px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Paste Your Resume Below</h2>
+    <form method="POST" action="/predict">
+        <textarea name="resume" rows="15" placeholder="Paste your resume here..."></textarea><br>
+        <input type="submit" value="Predict Job Role">
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <p>🔍 Predicted Role: <strong>{{ prediction }}</strong></p>
+    </div>
+    {% endif %}
+</body>
+</html>
